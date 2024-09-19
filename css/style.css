@@ -9496,20 +9496,13 @@ a.text-dark:hover, a.text-dark:focus {
     height: 18vh;
   }
 }
-
-@media (max-width: 435px) {
-  .width img{
-    width: 23vw;
-    height: 7vh;
-  }
-}
 .navbar-vertical.navbar-light .navbar-nav .nav-link {
   padding: 8px 30px;
   border-bottom: 1px solid #EDF1FF;
 }
 #header-carousel img {
   width: 100%;
-  height: 100%;
+  height: 80vh;
   object-fit: cover;
 }
 
@@ -9633,4 +9626,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .cookware p{
   width: 60vw;
+}
+@media (max-width: 435px) {
+  #header-carousel img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .width img{
+    width: 23vw;
+    height: 7vh;
+  }
 }
