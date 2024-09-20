@@ -1,55 +1,115 @@
-(function ($) {
+(function() {
     "use strict";
-    
+
     // Dropdown on mouse hover
-    $(document).ready(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         function toggleNavbarMethod() {
-            if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
+            const dropdowns = document.querySelectorAll('.navbar .dropdown');
+            if (window.innerWidth > 992) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.addEventListener('mouseover', function () {
+                        const toggle = dropdown.querySelector('.dropdown-toggle');
+                        toggle && toggle.click();
+                    });
+
+                    dropdown.addEventListener('mouseout', function () {
+                        const toggle = dropdown.querySelector('.dropdown-toggle');
+                        toggle && toggle.click();
+                        toggle && toggle.blur();
+                    });
                 });
             } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
+                dropdowns.forEach(dropdown => {
+                    dropdown.replaceWith(dropdown.cloneNode(true)); // removes event listeners
+                });
             }
         }
+        
         toggleNavbarMethod();
-        $(window).resize(toggleNavbarMethod);
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+        window.addEventListener('resize', toggleNavbarMethod);
     });
 
+    // Back to top button
+    window.addEventListener('scroll', function() {
+        const backToTop = document.querySelector('.back-to-top');
+        if (window.scrollY > 100) {
+            backToTop.style.display = 'block';
+            backToTop.style.opacity = 1;
+        } else {
+            backToTop.style.display = 'none';
+            backToTop.style.opacity = 0;
+        }
+    });
+
+    document.querySelector('.back-to-top').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 
     // Product Quantity
-    $('.quantity button').on('click', function () {
-        var button = $(this);
-        var oldValue = button.parent().parent().find('input').val();
-        if (button.hasClass('btn-plus')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
+    const quantityButtons = document.querySelectorAll('.quantity button');
+    quantityButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const inputField = button.parentElement.parentElement.querySelector('input');
+            let oldValue = parseFloat(inputField.value);
+            let newValue;
+
+            if (button.classList.contains('btn-plus')) {
+                newValue = oldValue + 1;
             } else {
-                newVal = 0;
+                newValue = oldValue > 0 ? oldValue - 1 : 0;
             }
-        }
-        button.parent().parent().find('input').val(newVal);
+
+            inputField.value = newValue;
+        });
     });
-    
-})(jQuery);
+
+})();
+$(document).ready(function(){
+    $(".owl-carousel1").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 4
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  });
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 4
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  });
 
 window.addEventListener('scroll', function() {
     var content = document.getElementById('content');
@@ -59,7 +119,4 @@ window.addEventListener('scroll', function() {
         content.classList.remove('active');
     }
 });
-
 ScrollReveal().reveal('.container-fluid', { delay: 400 },{origin:"left"});
-
-
