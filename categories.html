@@ -545,7 +545,84 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+    <script>
+        const data1 = {
+        "items": [
+            {
+                "title": "KADHAI with LID <br> 24 CM",
+                "description": "",
+                "price": 4990,
+                "image": "./Images/023.png"
+            },
+            {
+                "title": "FRY PAN without lid <br> 20 CM",
+                "description": "",
+                "price": 4990,
+                "image": "./Images/020.png"
+            },
+            {
+                "title": "SAUCE PAN with LID <br> 16 CM ",
+                "description": "",
+                "price": 4990,
+                "image": "./Images/06.png"
+            },
+            {
+                "title": "SAUCE POT with LID <br> 20 CM",
+                "description": "",
+                "price": 4990,
+                "image": "./Images/016.png"
+            },
+            {
+                "title": "SAUCE PAN with LID <br> 16 CM ",
+                "description": "",
+                "price": 1199.99,
+                "image": "./Images/06.png"
+            },
+            {
+                "title": "SAUCE PAN with LID <br> 16 CM ",
+                "description": "",
+                "price": 1199.99,
+                "image": "./Images/06.png"
+            },
+        ]
+      };
+      
+      // Function to render the shop items
+      function renderItems() {
+        const itemsContainers = document.querySelectorAll("#items");
+        itemsContainers.forEach(itemsContainer => {
+            data1.items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('item');
+                itemDiv.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" style="width:100%">
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <p>Price: MRP ${item.price}</p>
+                    <button onclick="addToCart(${item.id})"><i class="fas fa-shopping-cart text-primary mr-1"></i> Add to Cart</button>
+                `;
+                itemsContainer.appendChild(itemDiv);
+            });
+        });
+      }
+      
+      // Function to handle adding items to the cart
+      function addToCart(itemId) {
+        const cartContainer = document.getElementById('cart');
+        const selectedItem = data.items.find(item => item.id === itemId);
+      
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <h3>${selectedItem.title}</h3>
+            <p>${selectedItem.description}</p>
+            <p>Price: $${selectedItem.price}</p>
+        `;
+      
+        cartContainer.appendChild(cartItem);
+      }
+      renderItems();
+    </script>
     <script src="js/main.js"></script>
 </body>
 
