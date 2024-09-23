@@ -10079,6 +10079,25 @@ ol{
 }
 
 
+@media (max-width: 576px) {
+  .product-grid {
+    flex-direction: column;
+  }
+  .product-item1{
+    max-width: 100%;
+    padding: 10px;
+  }
+  .product-item1 img {
+    max-width: 50%;
+  }
 
+}
+@media (max-width: 940px ) {
+  .position{
+    display: flex;
+    gap: 200px;
+  }
+}
+  
 
 
