@@ -9782,3 +9782,35 @@ ol{
   margin-right: 20px;
   color: #000;
 }
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.item img{
+  width: 100px;
+  height: 230px;
+  transition: transform 0.3s ease;
+  z-index: 10;
+  overflow: hidden;
+}
+.item img:hover{
+  transform: scale(0.8);
+}
+.item {
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+}
+.cart {
+  margin-top: 20px;
+}
+.cart-item {
+  margin-bottom: 10px;
+}
+.item button{
+  border: none;
+  border: 1px solid black;
+}
+
