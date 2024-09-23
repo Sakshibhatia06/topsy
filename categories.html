@@ -599,7 +599,7 @@
                     <h3>${item.title}</h3>
                     <p>${item.description}</p>
                     <p>Price: MRP ${item.price}</p>
-                    <button onclick="addToCart(${item.id})"><i class="fas fa-shopping-cart text-primary mr-1"></i> Add to Cart</button>
+                     <a href="addCart.html#cart"><button onclick="addToCart(${item.id})"><i class="fas fa-shopping-cart text-primary mr-1"></i> Add to Cart</button></a>
                 `;
                 itemsContainer.appendChild(itemDiv);
             });
