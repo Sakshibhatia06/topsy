@@ -21,10 +21,11 @@
 <body>
     <!-- Topbar Start -->
     <div class="container-fluid">
-        <div class="row bg-secondary py-2 px-xl-5">
-            <div class="col-lg-6 d-none d-lg-block">
-                <div class="d-inline-flex font-size">
-                    <p><strong> TOPSY TURVY </strong>, The latest brand innovation by Allure Houseware</p>
+        <div class="row bg-secondary px-xl-5">
+            <div class="col-lg-6 d-lg-block">
+                <div class="d-inline-flex margin">
+                    <p><strong style="color:#d31919;"> TOPSY TURVY </strong>, The latest brand innovation by Allure
+                        Houseware</p>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -99,7 +100,14 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown">LunchBoxes&nbsp; <i
+                        <a href="#" class="nav-link" data-toggle="dropdown">Lunch Boxes&nbsp; <i
+                                class="fa fa-angle-down float-right mt-1"></i></a>
+                        <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                            <a href="" class="dropdown-item">Coming Soon</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown">Barware &nbsp; <i
                                 class="fa fa-angle-down float-right mt-1"></i></a>
                         <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                             <a href="" class="dropdown-item">Coming Soon</a>
@@ -165,7 +173,7 @@
 
 
     <!-- Featured Start -->
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-3">
         <div class="row px-xl-5 pb-3 mediaRow">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
@@ -215,18 +223,18 @@
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
                     <a href="categories.html" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="./Images/Lunch Box category thumbnail.png" alt="">
+                        <img class="img-fluid1" src="./Images/Lunch Box category thumbnail.png" alt="">
                     </a>
-                    <h5 class="font-weight-semi-bold m-0 hover">LUNCHBOXES</h5>
+                    <h5 class="font-weight-semi-bold m-0 hover">LUNCH BOXES</h5>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 pb-1">
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
                     <a href="categories.html" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="./Images/Barware category thumbnail.png" alt="">
+                        <img class="img-fluid1" src="./Images/Barware category thumbnail.png" alt="">
                     </a>
-                    <h5 class="font-weight-semi-bold m-0 hover ">Barware</h5>
+                    <h5 class="font-weight-semi-bold m-0 hover ">BARWARE</h5>
                 </div>
             </div>
         </div>
@@ -235,86 +243,58 @@
 
 
     <!-- Offer Start -->
-    <div class="container-fluid offer pt-5" id="deal">
-        <div class="row px-xl-5">
-            <div class="col-md-6 pb-4 owl-carousel1 owl-carousel">
-                <div class="position-relative bg-primary text-center text-md-right text-white mb-2 py-5 px-5">
-                    <img src="./Images/022-removebg-preview.png" alt="">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2 class="mb-3">DEAL OF THE DAY</h2>
-                        <h5 class="text-uppercase text-primary mb-3">20% off on all the orders</h5>
-                        <h1 class="mb-4 font-weight-semi-bold">New Users</h1>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+    <div class="DealDay">
+        <div class="style_deal">
+           <a href="categories.html"><img src="./Images/Deal of the day 1.png"></a>
+        </div>
+        <div class="review-section">
+            <h1 class="review-title">Customer Reviews</h1>
+            <!-- Review Card 1 -->
+             <div class="owl-carousel">
+                <div class="review-card">
+                    <div class="reviewer-name">Emily Johnson</div>
+                    <div class="review-rating">
+                        <div class="stars">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                        <span>(5/5)</span>
                     </div>
+                    <p class="review-text">
+                        "I absolutely love this cookware set! The non-stick surface is amazing, and the pots and pans heat evenly.
+                        I’ve been using them for months now, and they still look brand new. Highly recommend!"
+                    </p>
                 </div>
-                <div class="position-relative bg-primary text-center text-md-right text-white mb-2 py-5 px-5">
-                    <img src="./Images/024-removebg-preview.png" alt="">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2 class="mb-3">DEAL OF THE DAY</h2>
-                        <h5 class="text-uppercase text-primary mb-3"> &nbsp; 20% off on all the orders</h5>
-                        <h1 class="mb-4 font-weight-semi-bold">New Users</h1>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+            
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="reviewer-name">Michael Lee</div>
+                    <div class="review-rating">
+                        <div class="stars">
+                            <i></i><i></i><i></i><i></i><i style="color: #ccc;"></i> <!-- 4 stars, one grey -->
+                        </div>
+                        <span>(4/5)</span>
                     </div>
+                    <p class="review-text">
+                        "Great value for the price! The cookware is sturdy and well-made, but I wish the handles stayed cooler when
+                        cooking. Other than that, I’m very satisfied."
+                    </p>
                 </div>
-                <div class="position-relative bg-primary text-center text-md-right text-white mb-2 py-5 px-5">
-                    <img src="./Images/020-removebg-preview.png" alt="">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2 class="mb-3">DEAL OF THE DAY</h2>
-                        <h5 class="text-uppercase text-primary mb-3">20% off on all the orders</h5>
-                        <h1 class="mb-4 font-weight-semi-bold">New Users</h1>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+            
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="reviewer-name">Sarah Williams</div>
+                    <div class="review-rating">
+                        <div class="stars">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                        <span>(5/5)</span>
                     </div>
+                    <p class="review-text">
+                        "This is the best cookware set I’ve ever owned. Cooking is a breeze, and cleanup is quick and easy. The design
+                        is sleek, and they work perfectly on my induction stove."
+                    </p>
                 </div>
-            </div>
-
-            <div class="col-md-6 pb-4 owl-carousel">
-                <div class="position-relative fit bg-primary  text-center text-md-left text-white mb-2 py-5 px-5">
-                    <img src="./Images/00001.png" alt="Image 1">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2>&nbsp;</h2>
-                        <h5 class="text-uppercase text-primary mb-3">Customer Reviews</h5>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
-                        <h1 class="mb-4 font-weight-semi-bold">&nbsp;</h1>
-                    </div>
-                </div>
-                <div class="position-relative fit bg-primary  text-center text-md-left text-white mb-2 py-5 px-5">
-                    <img src="./Images/00002.png" alt="Image 1">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2>&nbsp;</h2>
-                        <h5 class="text-uppercase text-primary mb-3">Customer Reviews</h5>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
-                        <h1 class="mb-4 font-weight-semi-bold">&nbsp;</h1>
-                    </div>
-                </div>
-                <div class="position-relative fit bg-primary  text-center text-md-left text-white mb-2 py-5 px-5">
-                    <img src="./Images/00003.png" alt="Image 1">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2>&nbsp;</h2>
-                        <h5 class="text-uppercase text-primary mb-3">Customer Reviews</h5>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
-                        <h1 class="mb-4 font-weight-semi-bold">&nbsp;</h1>
-                    </div>
-                </div>
-                <div class="position-relative fit bg-primary  text-center text-md-left text-white mb-2 py-5 px-5">
-                    <img src="./Images/00004.png" alt="Image 1">
-                    
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2>&nbsp;</h2>
-                        <h5 class="text-uppercase text-primary mb-3">Customer Reviews</h5>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
-                        <h1 class="mb-4 font-weight-semi-bold">&nbsp;</h1>
-                    </div>
-                </div>
-                <div class="position-relative fit bg-primary  text-center text-md-left text-white mb-2 py-5 px-5">
-                    <img src="./Images/0001.png" alt="Image 1">
-                    <div class="position-relative" style="z-index: 1;">
-                        <h2>&nbsp;</h2>
-                        <h5 class="text-uppercase text-primary mb-3">Customer Reviews</h5>
-                        <a href="categories.html#ss1" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
-                        <h1 class="mb-4 font-weight-semi-bold">&nbsp;</h1>
-                    </div>
-                </div>
-            </div>
+             </div>
         </div>
     </div>
     <!-- Offer End -->
@@ -372,12 +352,12 @@
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                         <h4 class="text-truncate mb-3">
-                             SAUCE PAN 16 CM <br> with LID</h4>
+                            SAUCE PAN 16 CM <br> with LID</h4>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="addcart.html#cart" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View
                             Detail</a>
-                        <a href="" class="btn btn-sm text-dark p-0"><i
+                        <a href="addcart.html#cart" class="btn btn-sm text-dark p-0"><i
                                 class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                     </div>
                 </div>
@@ -399,7 +379,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- Products End -->
@@ -417,9 +397,8 @@
                     transforms everyday essentials into extraordinary experiences, ensuring you get both style and
                     functionality without compromise.</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Allure Houseware, I.P.
-                    extension, Delhi &nbsp; &nbsp; &nbsp; - 110092 INDIA</p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Monday to Saturday <br> &nbsp;
-                    &nbsp; &nbsp; 9A.M to
+                    extension, Delhi - 110092 INDIA</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Monday to Saturday 9A.M to
                     5:30P.M</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>topsyturvyallure@gmail.com</p>
                 <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 11 47021375</p>
@@ -441,15 +420,15 @@
                                 Day</a>
                             <a class="text-dark mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>
                             <a class="text-dark mb-2" href="faq.html"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
-                            <a class="text-dark" href="#contact"><i class="fa fa-angle-right mr-2"></i>ContactUs</a>
+                            <a class="text-dark" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
-                        <h5 class="font-weight-bold text-dark mb-4">POLICIES</h5>
+                        <a href="policy.html"><h5 class="font-weight-bold text-dark mb-4">Policies</h5></a>
                         <p></p>
                         <a href="policy.html#policy1">Shipping Policy</a>
                         <br>
-                        <a href="policy.html#policy2">Refund Policy</a>
+                        <a href="policy.html#policy2">Return Policy</a>
                         <br>
                         <a href="policy.html#policy3">Term of Services</a>
                         <br>
@@ -469,7 +448,12 @@
                         </a>
                         <div class="container-scroll">
                             <div class="logo1">
-                              
+                                <!-- LightWidget WIDGET -->
+                                <!-- LightWidget WIDGET -->
+                                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+                                    src="//lightwidget.com/widgets/c999dc1e4466504dac8c0084bf9b112a.html" scrolling="no"
+                                    allowtransparency="true" class="lightwidget-widget"
+                                    style="width:100%;border:0;overflow:hidden;"></iframe>
                             </div>
                         </div>
                     </div>
