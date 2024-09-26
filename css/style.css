@@ -10172,6 +10172,36 @@ a.text-dark:hover, a.text-dark:focus {
   .product-grid {
     flex-direction: column;
   }
+  .review-title {
+    font-size: 20px;
+  }
+  .review-rating{
+    font-size: 10px;
+  }
+  .review-card{
+    margin-bottom: 0px;
+  }
+  .review-text{
+    font-size: 10px;
+  }
+  .stars {
+    font-size: 10px;
+  }
+  .DealDay{
+    display: flex;
+    flex-direction: column;
+  }
+  .owl-nav{
+    display: none;
+  }
+  .owl-dots{
+    display: none;
+  }
+  .reviewer-name {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  
   .font-size p{
     text-align: center;
   }
@@ -10204,6 +10234,7 @@ a.text-dark:hover, a.text-dark:focus {
     margin-left: 30px;
     margin-right: 30px;
   }
+
 
   .cookware p{
     width: 95vw;
